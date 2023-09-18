@@ -1,1 +1,70 @@
-Wellcome Themesine World!
+Resume
+Murali Krishna Alakuntla Mobile: +91 9441536224
+DevOps Engineer EMAIL: muralialakuntla3@gmail.com
+LinkedIn: https://www.linkedin.com/in/murali-krishna-alakuntla-765169136/
+I bring a year of focused experience within the IT industry, specializing in cloud implementation and Build and Release management. Leveraging the capabilities of AWS and Azure services, I have meticulously designed and executed Continuous Integration and Continuous Delivery (CI/CD) pipelines, streamlining processes, reducing manual intervention, and expediting release cycles.
+Core Competencies:
+• Cloud Infrastructure Design and Deployment: Proficient in utilizing AWS services including EC2, ELB, EBS, AMI, IAM, VPC, and S3, as well as Azure resources encompassing App Services, Container Registry, VMs, Active Directory, Databases, Virtual Network, and Subnets.
+• CI/CD Pipeline Expertise: Created CI/CD pipelines using Jenkins for deploying Docker containerized applications on AWS and Azure clouds. Demonstrated competence in fundamental aspects of Code Build, Code Deploy, and Code Pipeline. Thorough understanding of Azure boards, Azure repos, and Azure pipelines, facilitating efficient project management and version control.
+• Containerization and Deployment: Hands-on experience with Docker for containerizing applications. Proficiently created CI/CD pipelines using Jenkins for deploying containerized applications across AWS and Azure cloud environments.
+• Kubernetes Orchestration: Successfully employed Kubernetes to expertly manage the deployment, scaling, and administration of Docker Containers, ensuring efficient container operations.
+• Infrastructure as Code Proficiency: Utilized Terraform scripts to configure deployable infrastructure and Ansible playbooks for seamless management, maintaining a strong focus on consistency and automation.
+• Source Control Management: Skilled in maintaining Source Control Management Systems such as GIT, encompassing the creation of tags, branches, and managing merges.
+• Build Tools Utilization: Proficiency in utilizing Maven and NPM (Node) for generating deployable artifacts from diverse source code management tools.
+Professional Summary:
+• Application Monitoring: Experience in monitoring applications through Prometheus & Grafana tools, ensuring real-time observability and performance optimization.
+• Linux Environment Management: Managed configuration and maintenance of services within Linux environments, implementing optimization strategies for enhanced system performance and security.
+Operating Systems
+:
+Cent OS, Ubuntu.
+AWS (Cloud Technology)
+:
+EC2, VPC, S3, IAM, EBS, Elastic Load Balancer, RDS, AWS CLI, VPC Peering.
+Azure
+(Cloud Technology)
+:
+VM, Azure Virtual Network, Azure Databases (PostgreSQL), Resource Grouping, Azure App Services.
+Azure DevOps
+:
+Azure boards, Azure repos, Azure pipelines.
+DevOps Tools
+:
+Git, GitHub, Bitbucket, Jenkins, Docker, Kubernetes, Terraform, Ansible, Maven, Nexus.
+Servers
+:
+Nginx, Apache Tomcat & Apache HTTPD
+Scripting Languages
+:
+Python, Bash (basic level)
+Monitoring Tools
+:
+Prometheus & Grafana
+BACHELOR’S OF TECHNOLOGY DEGREE
+(ELECTRONICS & COMMUNICATION ENGINEERING)
+JNTU -HYDERABAD
+Technical Expertise :
+Education/Certification/Training:
+Client: Digital Lync Technologies Project Name: LMS (Learning Management System)
+Tech Stacks:
+1. Jenkins, Docker, Kubernetes, Linux (Ubuntu), AWS Cloud, Git, PostgreSQL, Node (NPM), Prometheus & Grafana.
+2. Azure App Services, Azure pipeline, Azure Repos, ACR, Docker, Ubuntu, Azure Cloud, PostgreSQL, Node, Redis Cache, Prometheus & Grafana.
+Key Responsibilities:
+• Deployed application using AWS services like EC2, VPC, PostgreSQL, and AWS CLI.
+• Created Docker images via Dockerfile and configured containers with Docker Images.
+• Integrated Jenkins with Git and set up Jenkins nodes.
+• Developed Jenkins pipeline using Jenkinsfile for CI/CD.
+• Established CI and CD jobs and deployed infrastructure with Terraform.
+• Implemented Nginx as Load Balancer and Web Server.
+• Orchestrated production-grade Kubernetes clusters.
+• Utilized Azure services such as VMs, VNet, Azure Static Webapps, Azure App Service, Azure Container Registry, PostgreSQL, etc.
+• Managed code repositories on GitHub and Azure Repos.
+• Configured Docker containers with ACR-hosted Docker Images.
+• Set up a personal Azure Container Registry.
+• Created Azure pipelines using Pipeline script.
+• Integrated PostgreSQL database with the backend.
+• Monitored application continuously using Prometheus and Grafana tools.
+I, Murali Krishna, confirm that the above furnished details are true and correct to the best of my knowledge. Thank you for considering my application. I look forward to discussing how I can contribute to your team.
+Date:
+Place: Hyderabad (A. Murali Krishna)
+Work Experience:
+Declaration:
