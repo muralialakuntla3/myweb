@@ -6,13 +6,13 @@
         "default": "I'm sorry, I don't understand. Please ask another question."
     };
 
-    // Function to send a message
-    function sendMessage() {
-        const userInput = document.getElementById("userInput").value;
-        displayMessage(userInput, true); // Display user's message
-        respondToUser(userInput.toLowerCase()); // Process user's input
+// Function to send a message
+function sendMessage() {
+    const userInput = document.getElementById("userInput").value;
+    displayMessage(userInput, true); // Display user's message
+    respondToUser(userInput.toLowerCase()); // Process user's input
         document.getElementById("userInput").value = ""; // Clear the input field
-    }
+}
 
     // Function to display a message in the chatbox
     function displayMessage(message, isUser) {
