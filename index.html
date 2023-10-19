@@ -173,14 +173,19 @@
 					"good": "ohh you seem a little bit upset",
 					"gopi": "hello small master, how's your day",
 					"anil": "hello small master, how's your day",
+					"clear": clearChat, // Handle clear command
 					"default": "I'm sorry, I don't understand. Please ask another question."
 				};
 
 				// Function to send a message
 				function sendMessage() {
 					const userInput = document.getElementById("userInput").value;
-					displayMessage(userInput, true); // Display user's message
-					respondToUser(userInput.toLowerCase()); // Process user's input
+					if (userInput.toLowerCase() === "clear") {
+						clearChat();
+					} else {
+						displayMessage(userInput, true); // Display user's message
+						respondToUser(userInput.toLowerCase()); // Process user's input
+					}
 					document.getElementById("userInput").value = ""; // Clear the input field
 					scrollToBottom(); // Scroll to the bottom after sending a message
 				}
@@ -206,6 +211,12 @@
 					chatbox.scrollTop = chatbox.scrollHeight;
 				}
 
+				// Function to clear the chat history
+				function clearChat() {
+					const chatbox = document.getElementById("chatbox");
+					chatbox.innerHTML = ""; // Clear all messages
+				}
+
 				// Attach the sendMessage function to the Send button's click event
 				document.querySelector("#chatbot-container button").addEventListener("click", sendMessage);
 
@@ -216,6 +227,7 @@
 					}
 				});
 			</script>
+
 			<!-- Chatbot JavaScript ends -->
 		</body>	
 		<!-- Chatbot Container ends-->
