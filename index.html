@@ -222,17 +222,9 @@
 				})
 				
 				// Function to scroll the chatbox to the bottom
-				function scrollToBottom() {
-					const chatbox = document.getElementById("chatbox");
-					const lastMessage = chatbox.lastElementChild;
-					if (lastMessage) {
-						lastMessage.scrollIntoView({ behavior: "smooth" });
-					}
-				}
-
-				// Automatically scroll to the bottom when new messages are added
 				function onNewMessage() {
-					scrollToBottom();
+					const chatbox = document.getElementById("chatbox");
+					chatbox.scrollTop = chatbox.scrollHeight;
 				}
 
 				// Attach the onNewMessage function to the sendMessage function
