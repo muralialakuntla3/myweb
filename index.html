@@ -219,6 +219,23 @@
 					if (event.key === "Enter") {
 						sendMessage();
 					}
+				})
+				
+				// Function to scroll the chatbox to the bottom
+				function scrollToBottom() {
+					const chatbox = document.getElementById("chatbox");
+					chatbox.scrollTop = chatbox.scrollHeight;
+				}
+
+				// Automatically scroll to the bottom when new messages are added
+				function onNewMessage() {
+					scrollToBottom();
+				}
+
+				// Attach the onNewMessage function to the sendMessage function
+				document.querySelector("#chatbot-container button").addEventListener("click", function () {
+					sendMessage();
+					onNewMessage();
 				});
 			</script>
 		</body>		
