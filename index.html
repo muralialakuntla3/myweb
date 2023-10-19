@@ -160,23 +160,8 @@
 
 						
 			<!-- Chatbot JavaScript starts -->
-			<script>
-				// Define the chatbot's responses
-				const responses = {
-					"hello": "Hello! How can I assist you?",
-					"how are you": "I'm just a bot, but thanks for asking!",
-					"murali": "hello Master, sorry for rude behavior",
-					"yellaiah": "hello bro, sorry for my rude response",
-					"its okay": "thanks for your pardon, how's your day",
-					"venu": "hello supreme master, how are you",
-					"fine": "that's great",
-					"good": "ohh you seem a little bit upset",
-					"gopi": "hello small master, how's your day",
-					"anil": "hello small master, how's your day",
-					"clear": clearChat, // Handle clear command
-					"default": "I'm sorry, I don't understand. Please ask another question."
-				};
 
+			<script>
 				// Function to send a message
 				function sendMessage() {
 					const userInput = document.getElementById("userInput").value;
@@ -184,7 +169,7 @@
 						clearChat();
 					} else {
 						displayMessage(userInput, true); // Display user's message
-						respondToUser(userInput.toLowerCase()); // Process user's input
+						interactWithChatbot(userInput.toLowerCase()); // Process user's input with the chatbot
 					}
 					document.getElementById("userInput").value = ""; // Clear the input field
 					scrollToBottom(); // Scroll to the bottom after sending a message
@@ -199,10 +184,36 @@
 					chatbox.appendChild(messageElement);
 				}
 
-				// Function to respond to the user
-				function respondToUser(userInput) {
-					let response = responses[userInput] || responses["default"];
-					displayMessage(response, false);
+				// Function to interact with the chatbot
+				function interactWithChatbot(userInput) {
+					fetchChatbotResponse(userInput)
+						.then(response => {
+							displayMessage(response, false); // Display the chatbot's response
+						})
+						.catch(error => {
+							console.error("Chatbot API error:", error);
+							displayMessage("I'm sorry, there was an error. Please try again.", false);
+						});
+				}
+
+				// Function to fetch chatbot response from an API (you can replace this with your API)
+				function fetchChatbotResponse(userInput) {
+					// Replace the following URL with your chatbot API endpoint
+					const apiUrl = "https://your-chatbot-api-endpoint.com/chat";
+
+					return fetch(apiUrl, {
+						method: "POST",
+						headers: {
+							"Content-Type": "application/json",
+						},
+						body: JSON.stringify({ userInput }),
+					})
+						.then(response => {
+							if (!response.ok) {
+								throw new Error("Chatbot API request failed");
+							}
+							return response.text();
+						});
 				}
 
 				// Function to scroll the chatbox to the bottom
