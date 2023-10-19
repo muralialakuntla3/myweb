@@ -41,6 +41,8 @@
         
         <!--responsive.css-->
         <link rel="stylesheet" href="assets/css/responsive.css">
+		<!--chat bot.js-->
+		<script src="assets/js/chatbot.js"></script>
         
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -51,7 +53,7 @@
         <![endif]-->
 
     </head>
-	
+
 	<body>
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -84,7 +86,7 @@
 			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
 			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
 			                    <li class="smooth-menu"><a href="#project">projects</a></li>
-			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+			                    <li class="smooth-menu"><a href="#contact">contact</a></li>		
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->
@@ -113,7 +115,105 @@
 
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
-
+		<!-- Chatbot Container -->
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Chatbot Example</title>
+		
+			<!-- Your existing styles and scripts go here -->
+			<style>
+				/* Chatbox border customization */
+				#chatbox {
+					width: 300px;
+					height: 300px;
+					border: 4px solid blue; /* Thick blue border */
+					overflow: auto;
+				}
+		
+				/* Message input box border customization */
+				#userInput {
+					width: 68.5%;
+					border: 4px solid green; /* Thick green border */
+				}
+				/* Send button border customization */
+				#sendButton {
+					width: 30%;
+            		border: 4px solid purple; /* Thick purple border */
+            		background-color: transparent; /* Remove button background color */
+            		color: purple; /* Text color */
+        		}
+			</style>
+		</head>
+		
+		<body>
+			<header class="top-area">
+				<!-- Your existing header content goes here -->
+			</header>
+		
+			<section id="welcome-hero" class="welcome-hero">
+				<!-- Your existing welcome-hero content goes here -->
+			</section>
+		
+			<section id="about" class="about">
+				<!-- Your existing about section content goes here -->
+			</section>
+		
+			<!-- Chatbot Container -->
+			<div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 100;">
+				<div id="chatbox">
+					<!-- Chat messages will be displayed here -->
+				</div>
+				<input type="text" id="userInput" placeholder="Type a message...">
+				<button id="sendButton">Send</button>
+			</div>
+		
+			<!-- Your existing sections and content go here -->
+		
+			<!-- Chatbot JavaScript -->
+			<script>
+				// Define the chatbot's responses
+				const responses = {
+					"hello": "Hello! How can I assist you?",
+					"how are you": "I'm just a bot, but thanks for asking!",
+					"default": "I'm sorry, I don't understand. Please ask another question."
+				};
+		
+				// Function to send a message
+				function sendMessage() {
+					const userInput = document.getElementById("userInput").value;
+					displayMessage(userInput, true); // Display user's message
+					respondToUser(userInput.toLowerCase()); // Process user's input
+					document.getElementById("userInput").value = ""; // Clear the input field
+				}
+		
+				// Function to display a message in the chatbox
+				function displayMessage(message, isUser) {
+					const chatbox = document.getElementById("chatbox");
+					const messageElement = document.createElement("div");
+					messageElement.classList.add(isUser ? "user-message" : "bot-message");
+					messageElement.innerText = message;
+					chatbox.appendChild(messageElement);
+				}
+		
+				// Function to respond to the user
+				function respondToUser(userInput) {
+					let response = responses[userInput] || responses["default"];
+					displayMessage(response, false);
+				}
+		
+				// Attach the sendMessage function to the Send button's click event
+				document.querySelector("#chatbot-container button").addEventListener("click", sendMessage);
+		
+				// Allow sending a message when the Enter key is pressed
+				document.getElementById("userInput").addEventListener("keyup", function (event) {
+					if (event.key === "Enter") {
+						sendMessage();
+					}
+				});
+			</script>
+		</body>		
 		<!--about start -->
 		<section id="about" class="about">
 			<div class="section-heading text-center">
