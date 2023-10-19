@@ -224,12 +224,15 @@
 				// Function to scroll the chatbox to the bottom
 				function scrollToBottom() {
 					const chatbox = document.getElementById("chatbox");
-					chatbox.scrollTop = chatbox.scrollHeight;
+					const lastMessage = chatbox.lastElementChild;
+					if (lastMessage) {
+						lastMessage.scrollIntoView({ behavior: "smooth" });
+					}
 				}
 
 				// Automatically scroll to the bottom when new messages are added
 				function onNewMessage() {
-					requestAnimationFrame(scrollToBottom);
+					scrollToBottom();
 				}
 
 				// Attach the onNewMessage function to the sendMessage function
@@ -237,6 +240,14 @@
 					sendMessage();
 					onNewMessage();
 				});
+</script>
+This code should scroll the chatbox to the bottom without any delay when a new message is added. It utilizes the scrollIntoView method to smoothly scroll to the last message.
+
+
+
+
+
+
 			</script>
 		</body>		
 		<!--about start -->
