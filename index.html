@@ -229,7 +229,7 @@
 
 				// Automatically scroll to the bottom when new messages are added
 				function onNewMessage() {
-					scrollToBottom();
+					requestAnimationFrame(scrollToBottom);
 				}
 
 				// Attach the onNewMessage function to the sendMessage function
