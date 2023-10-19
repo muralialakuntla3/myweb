@@ -115,16 +115,20 @@
 
 		</section><!--/.welcome-hero-->
 		<!--welcome-hero end -->
-		<!-- Chatbot Container -->
+		<!-- Chatbot Container start -->
 		<head>
-			<meta charset="utf-8">
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta charset="UTF-8">
 			<title>Chatbot Example</title>
-		
-			<!-- Your existing styles and scripts go here -->
 			<style>
-				/* Chatbox border customization */
+				/* Chatbot container styles */
+				#chatbot-container {
+					position: fixed;
+					bottom: 20px;
+					right: 20px;
+					z-index: 100;
+				}
+		
+				/* Chatbox styles */
 				#chatbox {
 					width: 300px;
 					height: 300px;
@@ -132,38 +136,30 @@
 					overflow: auto;
 				}
 		
-				/* Message input box border customization */
+				/* User input box styles */
 				#userInput {
 					width: 68.5%;
 					border: 4px solid green; /* Thick green border */
 				}
-				/* Send button border customization */
+		
+				/* Send button styles */
 				#sendButton {
 					width: 30%;
-            		border: 4px solid purple; /* Thick purple border */
-            		background-color: transparent; /* Remove button background color */
-            		color: purple; /* Text color */
-        		}
+					border: 4px solid purple; /* Thick purple border */
+					background-color: transparent; /* Remove button background color */
+					color: purple; /* Text color */
+				}
 			</style>
-						<!-- Chatbot JavaScript -->
- 	   		<!-- Include the external JavaScript file -->
-	   		<script src="assets/js/chatbot.js"></script>
 		</head>
-	
 		<body>
-			<!-- Chatbot Container -->
-			<div id="chatbot-container" style="position: fixed; bottom: 20px; right: 20px; z-index: 100;">
-				<div id="chatbox">
-					<!-- Chat messages will be displayed here -->
-				</div>
+			<div id="chatbot-container">
+				<div id="chatbox"></div>
 				<input type="text" id="userInput" placeholder="Type a message...">
 				<button id="sendButton">Send</button>
 			</div>
-		
-			<!-- Your existing sections and content go here -->
 			<script src="assets/js/chatbot.js"></script>
-
-		</body>		
+		</body>	
+		<!-- Chatbot Container ends-->
 		<!--about start -->
 		<section id="about" class="about">
 			<div class="section-heading text-center">
