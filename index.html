@@ -158,7 +158,8 @@
 				<button id="sendButton">Send</button>
 			</div>
 
-						<!-- Chatbot JavaScript -->
+						
+			<!-- Chatbot JavaScript starts -->
 			<script>
 				// Define the chatbot's responses
 				const responses = {
@@ -174,15 +175,16 @@
 					"anil": "hello small master, how's your day",
 					"default": "I'm sorry, I don't understand. Please ask another question."
 				};
-		
+
 				// Function to send a message
 				function sendMessage() {
 					const userInput = document.getElementById("userInput").value;
 					displayMessage(userInput, true); // Display user's message
 					respondToUser(userInput.toLowerCase()); // Process user's input
 					document.getElementById("userInput").value = ""; // Clear the input field
+					scrollToBottom(); // Scroll to the bottom after sending a message
 				}
-		
+
 				// Function to display a message in the chatbox
 				function displayMessage(message, isUser) {
 					const chatbox = document.getElementById("chatbox");
@@ -191,16 +193,22 @@
 					messageElement.innerText = message;
 					chatbox.appendChild(messageElement);
 				}
-		
+
 				// Function to respond to the user
 				function respondToUser(userInput) {
 					let response = responses[userInput] || responses["default"];
 					displayMessage(response, false);
 				}
-		
+
+				// Function to scroll the chatbox to the bottom
+				function scrollToBottom() {
+					const chatbox = document.getElementById("chatbox");
+					chatbox.scrollTop = chatbox.scrollHeight;
+				}
+
 				// Attach the sendMessage function to the Send button's click event
 				document.querySelector("#chatbot-container button").addEventListener("click", sendMessage);
-		
+
 				// Allow sending a message when the Enter key is pressed
 				document.getElementById("userInput").addEventListener("keyup", function (event) {
 					if (event.key === "Enter") {
@@ -208,6 +216,7 @@
 					}
 				});
 			</script>
+			<!-- Chatbot JavaScript ends -->
 		</body>	
 		<!-- Chatbot Container ends-->
 		<!--about start -->
