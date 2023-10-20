@@ -1,17 +1,17 @@
         // Define the chatbot's responses
         const responses = [{
-            "hello": "Hello! How can I assist you?",
-            "how are you": "I'm just a bot, but thanks for asking!",
-            "murali": "hello Master, sorry for rude behavior",
-            "yellaiah": "hello bro, sorry for my rude response",
-            "its okay": "thanks for your pardon, how's your day",
-            "venu": "hello supreme master, how are you",
-            "fine": "that's great",
-            "good": "ohh you seem a little bit upset",
-            "gopi": "hello small master, how's your day",
-            "anil": "hello small master, how's your day",
-            "clear": clearChat, // Handle clear command
-            "default": "I'm sorry, I don't understand. Please ask another question."
+            "hello": "Hello! How can I assist you?"},
+           { "how are you": "I'm just a bot, but thanks for asking!"},
+            {"murali": "hello Master, sorry for rude behavior"},
+            {"yellaiah": "hello bro, sorry for my rude response"},
+            {"its okay": "thanks for your pardon, how's your day"},
+            {"venu": "hello supreme master, how are you"},
+            {"fine": "that's great"},
+            {"good": "ohh you seem a little bit upset"},
+            {"gopi": "hello small master, how's your day"},
+            {"anil": "hello small master, how's your day"},
+            {"clear": clearChat}, // Handle clear command
+            {"default": "I'm sorry, I don't understand. Please ask another question."
         }];
 
     // Function to send a message
