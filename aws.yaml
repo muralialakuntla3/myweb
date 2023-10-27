@@ -1,0 +1,305 @@
+title:
+  prefix: Real Time
+  course: DevOps Training
+# Rating of the course on a scale of 1 to 5
+rating: 4.5
+no_of_live_projects: 6
+# Mentions the duration of the course in months
+duration: 2
+job_roles:
+  - DevOps Engineer
+  - SRE
+  - Release Engineer
+  - Cloud Engineer
+  - DevOps Consultant
+  - Automation Engineer
+  - CI-CD Specialist
+  - IAC Engineer
+  - ADO Engineer
+  - Linux Consultant
+
+syllabus:
+  - title: Fundamentals Of SDLC - ALM
+    topics:
+      - Introduction to Software Development Life Cycle (Application Lifecycle Management)
+      - Execution of Software Development Life Cycle (Application Lifecycle Management)
+      - Types Of Applications
+      - Fundamentals of Web Applications
+  - title: Learn Cloud Computing - AWS & AZURE
+    topics:
+      - Fundamentals of Datacenter
+      - Fundamentals of Servers
+      - Fundamentals of Cloud Computing
+      - AWS EC2
+      - Working with AWS Servers
+      - Azure Virtual Machines
+      - Working with Azure VM’s
+  - title: Linux OS
+    topics:
+      - Introduction to Operating Systems
+      - Introduction to Linux OS
+      - Linux Distributions
+      - Linux Architecture
+      - Command Line Interface - CLI
+      - Understanding CLI
+      - Linux Filesystem
+      - Linux Navigation
+      - File Management
+      - File Mangement Commands
+      - vi editor
+      - Archives - tar & zip Utilities
+      - Package Management
+      - Installations On Ubuntu
+      - Install deb files
+      - APT Package Manager
+      - Users & Permissions
+      - Create Users
+      - Create Groups
+      - Permissions
+      - Networking & Security
+      - IP Address
+      - Protocols & Ports
+      - DNS
+      - Firewalls
+      - Load Balancers
+  - title: Version Control System
+    topics:
+      - Introduction to Version Control System
+      - Centralised Version Control System
+      - Distributed Version Control System
+      - Git & GitHub Introduction
+      - Git Workflow
+      - GitHub For Collaboration
+      - Git Branching Model
+      - Git Merging Branches
+      - Pull Requests
+      - Git Rebase
+      - Detached Head
+      - Undoing Changes
+      - Git Ignore
+      - Tagging
+  - title: Docker - Containerisation
+    topics:
+      - Introduction to Containerisation
+      - Monolithic Architecture
+      - Microservices Architecture
+      - Introduction to Virtualisation
+      - Virtualisation vs Containerisation
+      - Docker Architecture
+      - Setting up Docker
+      - Docker Registry
+      - Docker Images Vs Docker Containers
+      - Running Docker Containers
+      - Docker Volumes
+      - Docker Networks
+      - Docker Logs
+      - Docker Tags
+      - Dockerize Applications
+      - Portability Using Docker Registry
+      - Docker Compose
+  - title: Kubernetes 
+    topics:
+      - Introduction to High Availability
+      - Introduction to Container Orchestration
+      - Container Orchestration Tools
+      - Overview of Kubernetes
+      - Kubernetes Architecture
+      - Components of Kubernetes
+      - Overview of Minikube
+      - Setup Minikube
+      - Kubernetes Objects
+      - Pods
+      - Replica Sets
+      - Deployments
+      - Services
+      - ClusterIP
+      - NodePort
+      - Load Balancer
+      - Config Maps
+      - Secrets
+      - Ingress
+      - Overview of Production Clusters
+      - Overview of AWS EKS
+      - Setup EKS
+      - Deploy Applications On EKS   
+  - title: Terraform
+    topics:
+      - Overview of Infrastructure As Code - IaC
+      - Overview of Terraform
+      - Terraform Resources
+      - Setup Terraform
+      - Terraform Providers
+      - AWS CLI Setup
+      - Setup AWS VPC - Terraform
+      - Setup AWS EC2 Server - Terraform
+      - Deploy Applications On AWS - Terraform
+      - Azure CLI Setup
+      - Setup Azure VNET - Terraform
+      - Setup Azure VM - Terraform
+      - Deploy Applications On Azure - Terraform
+      - Deploy Docker Containers - Terraform
+      - Azure Database Service - Terraform
+      - Azure Web Apps - Terraform
+  - title: Ansible
+    topics:
+      - Introduction To Ansible
+      - Ansible Setup
+      - Ansible Inventory
+      - Ansible Modules
+      - Ansible Ad-Hoc Commands
+      - Introduction To YAML
+      - Ansible Play books
+      - Ansible Handlers
+      - Ansible Facts & Variables
+      - Ansible Templates
+      - Ansible Roles
+  - title: Monitoring With Prometheus and Grafana
+    topics:
+      - Introduction to Monitoring
+      - Introduction to Prometheus
+      - Prometheus Architecture
+      - Monitoring With Prometheus
+      - Scrapping Metrics
+      - Node Exporter
+      - Infrastructure Metrics
+      - Applications Metrics
+      - Prometheus YAML Configs
+      - Prometheus With Docker
+      - Introduction to Visualisation
+      - Introduction To Grafana
+      - Installing Grafana on a Linux Server
+      - Grafana User Interface Overview
+      - Grafana With Docker
+      - Creating Grafana Dashboards
+  - title: Communication and Collaboration With Slack
+    topics:
+      - Getting started with Slack
+      - Starting with Channels
+      - Working with Messages
+      - Working with Calls
+      - Sharing Files and Conversations
+      - Searching and Shortcuts in Slack
+      - Slack Integrations with DevOps
+  - title: Scripting With Python
+    topics:
+      - Python as a Scripting Language
+      - Python Collections and Sequences
+      - Working with Python Collections
+      - Python Functional Programming
+      - Python File Handling
+      - Python Modules and Packages
+      - Classes in Python
+      - Oops in Python
+      - Application of Scripting Languages
+      - Automation through Scripting Languages
+tools:
+  - title: DevOps
+    link: https://3ro8b0zdvxfbk7jy.public.blob.vercel-storage.com/azure%20devops%20image-hXZ4F1s1iobj6NHE8AVA3EMir2mgJ0.jpg
+
+projects:
+  - title: Deploying Learning Management System (LMS) - EC2 instance
+    description: This project aims to deploy a Learning Management System (LMS) on AWS using EC2 instances. The LMS will consist of both a backend and a frontend, with the backend built using Node.js and PostgreSQL, and the frontend developed with React.js. Additionally, Nginx will be used to serve the frontend, and SSL certification via Certbot will provide secure access.
+    skills:
+      - AWS Cloud
+      - EC2
+      - Postgres
+      - nginx
+    author: Ravi
+    director: Manikant
+    # Mentions the duration of the project in hours
+    duration: 4
+projects:
+  - title: Dockerize Learning Management System (LMS) 
+    description: This project focuses on containerising and deploying a Learning Management System (LMS) on AWS using Docker. A Dockerfile is created to define the backend application's dependencies and runtime settings. Similarly, for the LMS frontend a dedicated Dockerfile is crafted to specify the environment for the React.js frontend application. A PostgreSQL container is created to run the database as a separate entity.
+    skills:
+      - Docker
+      - Dockerfile
+      - Docker Networks
+      - Docker Builds
+      - Docker Compose
+    author: Ravi
+    director: Manikant
+    # Mentions the duration of the project in hours
+    duration: 4
+projects:
+  - title: Learning Management System (LMS) On Minikube
+    description: This project revolves around leveraging Minikube as a local Kubernetes cluster for deploying a Learning Management System (LMS). The LMS consists of a backend, frontend, and a database, each orchestrated and managed using Kubernetes (k8s) deployments and services objects. The backend is built with Node.js, the frontend with React.js, and the database relies on PostgreSQL for data storage.
+    skills:
+      - Kubernetes
+      - Minikube
+      - Kubectl
+      - K8S Objects
+    author: Ravi
+    director: Manikant
+    # Mentions the duration of the project in hours
+    duration: 4
+projects:
+  - title: Learning Management System (LMS) On EKS
+    description: This project revolves around leveraging EKS as a production Kubernetes cluster for deploying a Learning Management System (LMS). The LMS consists of a backend, frontend, and a database, each orchestrated and managed using Kubernetes (k8s) deployments and services objects. The backend is built with Node.js, the frontend with React.js, and the database relies on PostgreSQL for data storage.
+    skills:
+      - AWS Cloud
+      - Kubernetes
+      - EKS
+      - K8S Objects
+    author: Ravi
+    director: Manikant
+    # Mentions the duration of the project in hours
+    duration: 4
+projects:
+  - title: Implement Jenkins CI/CD Pipeline For LMS
+    description: This project focuses on the implementation of a Learning Management System (LMS) with the integration of Jenkins for CI/CD (Continuous Integration/Continuous Deployment) and Docker containers for LMS deployment. The project aims to streamline the development and deployment processes while ensuring the successful integration of the LMS software. Key skills required include Jenkins for pipeline automation, Docker containerisation for deployment, knowledge of the specific LMS software, and scripting proficiency for seamless CI/CD integration.
+    skills:
+      - Jenkins
+      - AWS Cloud
+      - CI-CD
+      - Docker
+    author: Ravi
+    director: Manikant
+    # Mentions the duration of the project in hours
+    duration: 3
+projects:
+  - title: Streamlining LMS Operations with CI/CD and EKS Integration.
+    description: This project focuses on implementing a Learning Management System (LMS) with the integration of Jenkins for Continuous Integration/Continuous Deployment (CI/CD) and AWS Elastic Kubernetes Service (EKS). The goal is to streamline development, automate testing and deployment, and ensure scalability and reliability of the LMS. Key components include Jenkins for automation, AWS EKS for container orchestration, and the LMS software.
+    skills:
+      - Jenkins
+      - AWS Cloud
+      - EKS
+      - Docker
+      - K8S Objects
+    author: Ravi
+    director: Manikant
+    # Mentions the duration of the project in hours
+    duration: 4
+
+case_studies:
+  - title: Salesforce implementation of DevOps
+    description: Improving agility of Salesforece by deploying DevOps solutions based on the AWS systems to improve development governance, automation and bring new applications and services online more quickly.
+    logo: https://3ro8b0zdvxfbk7jy.public.blob.vercel-storage.com/salesforce-fdDaoiM0fMHzXjTolJ5dM14i7tj0ho.png
+
+trained_engineers:
+  - name: Satish Korlapati
+    designation: Senior Associate Consultant
+    company: Infosys
+  - name: Srinivas Rao
+    designation: Senior Software Engineer
+    company: Infosys
+
+upcoming_batches:
+  - start_date: 2023-11-04
+    start_time: 8 AM (IST)
+    duration: 1hr-1.5hrs / Per Session
+    type: weekday
+  - start_date: 2023-11-04
+    start_time: 8 AM (IST)
+    duration: 1hr-1.5hrs / Per Session
+    end_date: 2023-01-18
+    type: weekend
+
+
+faqs:
+  - question: What is the duration of the course?
+    answer: The duration of the course is 2 months.
+  - question: What are the prerequisites for this course?
+    answer: There are no prerequisites for this course. However, having a basic knowledge of Linux and Networking will be beneficial.
+  - question: Who are the instructors and how are they selected?
+    answer: All our instructors are working professionals from the Industry and have at least 10-12 yrs of relevant experience in various domains. They are selected after going through a rigorous selection process that includes profile screening, technical evaluation, and a training demo before they are certified to train for us. We also ensure that only those trainers with a high alumni rating remain on our faculty.
