@@ -48,9 +48,12 @@
         <!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+			<script src="js-yaml.min.js"></script>
         <![endif]-->
 
     </head>
+	
+
 	
 	<body>
 		<!--[if lte IE 9]>
@@ -85,6 +88,7 @@
 			                    <li class="smooth-menu"><a href="#profiles">profile</a></li>
 			                    <li class="smooth-menu"><a href="#project">projects</a></li>
 			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+								<li class="smooth-menu"><a href="#devops">devops</a></li>
 			                </ul><!--/.nav -->
 			            </div><!-- /.navbar-collapse -->
 			        </div><!--/.container-->
@@ -533,6 +537,28 @@
 
 		</section><!--/.skills-->
 		<!--skills end -->
+
+		<!--devops start-->
+		<section id="devops" class="devops">
+			<div class="section-heading text-center">
+				<h2>devops</h2>
+			</div>
+			<script>
+				// Use JavaScript to load and parse the YAML file
+				fetch('./devops.yaml') // Replace with the correct path to your YAML file
+					.then(response => response.text())
+					.then(yamlContent => {
+						// Parse the YAML content into a JavaScript object
+						const data = jsyaml.load(yamlContent);
+		
+						// Insert the YAML data into the HTML
+						const contentDiv = document.getElementById('content');
+						contentDiv.innerHTML = JSON.stringify(data, null, 2); // You can format the output as needed
+					})
+					.catch(error => console.error(error));
+			</script>
+		</section>	
+		<!--devops ends here-->
 
 		<!--profiles start -->
 		<section id="profiles" class="profiles">
